@@ -1,0 +1,179 @@
+extends layouts/main
+
+block vars
+  - var description = '';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | Components
+block main
+  .wrapper
+    include includes/sidebar
+    .content-wrap
+      .content
+        include includes/header
+
+        .container
+          
+          
+          each type in buttonTypes
+            each size in sizes
+              each iconConfig in icons
+                div(style="display: flex; justify-content: space-around")
+                  each item, index in styles
+                    +button({
+                      txt: 'Инвестировать',
+                      type: type,
+                      small: size.small,
+                      extrasmall: size.extrasmall,
+                      stl: item,
+                      icon: iconConfig.icon,
+                      dis: index === 4,
+                      tag: 'a',
+                      link: '#',
+                      cls: ''
+                    })
+                br
+                
+
+          
+          each type in buttonTypes
+            each size in sizes
+              div(style="display: flex; justify-content: space-around")
+                each item, index in styles
+                  +button({
+                    txt: '',
+                    type: type,
+                    small: size.small,
+                    extrasmall: size.extrasmall,
+                    stl: item,
+                    icon: 'plus',
+                    dis: index === 4,
+                    tag: 'a',
+                    link: '#',
+                    cls: 'btn_action'
+                  })
+              br
+
+
+          br
+          br
+        
+          br
+          br
+          div(style="display: flex; justify-content: space-around")
+            .btn-nav 
+              .icon.icon_w20
+                svg
+                  use(xlink:href='sprite.svg#angleleft')
+              | Назад    
+            
+            .btn-nav.btn-nav_reverse 
+              .icon.icon_w20
+                svg
+                  use(xlink:href='sprite.svg#angleleft')
+              | Вперед    
+            .btn-nav.btn-nav_sm 
+              .icon.icon_w16
+                svg
+                  use(xlink:href='sprite.svg#angleleft')
+              | Назад    
+
+            .btn-nav.btn-nav_reverse.btn-nav_sm 
+              .icon.icon_w16
+                svg
+                  use(xlink:href='sprite.svg#angleleft')
+              | Вперед    
+          br
+          br
+          div
+            +button(
+              {
+                txt: 'Перейти к каналу',
+                type: 'default',
+                small: false,
+                extrasmall: false,
+                stl: 'primary',
+                icon: 'telegram',
+                dis: false,
+                tag: 'a',
+                link: '#',
+                cls: 'btn_reverse'
+              })       
+            br   
+            br   
+            +button(
+              {
+                txt: 'Выйти',
+                type: 'default',
+                small: false,
+                extrasmall: false,
+                stl: 'primary',
+                icon: 'logout',
+                dis: false,
+                tag: 'a',
+                link: '#',
+                cls: 'btn_reverse text-action-red-400'
+              })        
+          br
+          br
+          div
+            -
+              var notifications = [
+                { status: 'primary', count: 17 },
+                { status: 'secondary', count: 32 },
+                { status: 'warning', count: 20 },
+                { status: 'action-red', count: 999 },
+                { status: 'action-red', count: 1000 },
+              ];
+
+
+            each notification in notifications
+              div(style="display: inline; margin-right: 10px")
+                .notification.notification_hidden-count(class=`notification_status-${notification.status}`)
+                  .icon.icon_w16
+                    svg
+                      use(xlink:href="sprite.svg#chat")
+                  .notification__count #{notification.count}
+            br
+            br
+            div    
+              each notification in notifications
+                div(style="display: inline; margin-right: 10px")
+                  .notification
+                    .icon.icon_w16
+                      svg
+                        use(xlink:href="sprite.svg#chat")
+                    .notification__count #{notification.count}
+
+          
+          h1 Заголовок первого уровня
+          h2 Заголовок второго уровня
+          p.text-400 Обычный текст с весом 400.
+          p.text-600 Полужирный текст с весом 600.
+          p.text-sm-400 Мелкий текст с весом 400.
+          p.text-sm-600 Мелкий полужирный текст с весом 600.
+          span.caption-400 Обычная подпись с весом 400. <br>
+          span.caption-600 Полужирная подпись с весом 600. <br>
+          span.caption-sm-400 Мелкая подпись с весом 400. <br>
+          span.caption-sm-700 Мелкая жирная подпись с весом 700. <br>
+
+          br
+          br
+          div(style="display: flex; flex-wrap:wrap;") 
+            each item in iconsSprite
+              .icon(style="width:20px;height:20px;margin-right:5px;")
+                svg(fill="#000" style="width:100%;height:100%")
+                  use(xlink:href='sprite.svg#'+item.name)
+                  
+          
+        
+      include includes/footer
+    
+
+
+  include includes/scripts

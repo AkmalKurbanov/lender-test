@@ -1,0 +1,285 @@
+@mixin liner($color, $color-shade, $hover-bg, $hover-bg-shade, $active-bg, $active-bg-shade)
+  color: map-get(map-get($color-palette, $color), $color-shade)
+
+  &:hover
+    background-color: map-get(map-get($color-palette, $hover-bg), $hover-bg-shade)
+
+  &.active,
+  &:active
+    background-color: map-get(map-get($color-palette, $active-bg), $active-bg-shade)
+
+@mixin filled($bg, $bg-shade, $hover-bg, $hover-bg-shade, $active-bg, $active-bg-shade)
+  background-color: map-get(map-get($color-palette, $active-bg), $active-bg-shade)
+  color: #fff
+  border: none
+
+  &:hover
+    background-color: map-get(map-get($color-palette, $hover-bg), $hover-bg-shade)
+
+  &.active,
+  &:active
+    background-color: map-get(map-get($color-palette, $active-bg), $active-bg-shade)
+
+  .icon
+    fill: $white
+
+.btn
+  @include dif-xy-center
+  text-decoration: none
+  outline: none
+  border: none
+  background: none
+  border-width: rem(2)
+  border-style: solid
+  height: rem(48)
+  border-radius: map-get($border-radiuses, sm)
+  padding: rem(12) rem(24)
+  @extend .text-sm-600
+  transition: all 0.3s
+  cursor: pointer
+  box-sizing: border-box
+
+  &.disabled,
+  &[disabled]
+    border-color: map-get(map-get($color-palette, dark), 100)
+    color: map-get(map-get($color-palette, dark), 300)
+    pointer-events: none
+
+    .icon
+      fill: map-get(map-get($color-palette, dark), 300)
+
+  .icon
+    max-width: rem(24)
+    min-width: rem(24)
+    height: rem(24)
+    fill: currentColor
+    margin-left: rem(8)
+    margin-right: rem(8)
+
+    &:lats-child
+      margin-right: 0
+
+  &_liner-primary
+    @include liner('primary', 300, 'primary', 50, 'primary', 100)
+
+  &_liner-secondary
+    @include liner('secondary', 600, 'secondary', 50, 'secondary', 100)
+
+  &_liner-action-red
+    @include liner('action-red', 400, 'action-red', 50, 'action-red', 100)
+
+  &_liner-grey
+    @include liner('dark', 400, 'dark', 50, 'dark', 100)
+
+  &_filled-primary
+    @include filled('primary', 300, 'primary', 400, 'primary',500)
+
+  &_filled-secondary
+    @include filled('secondary', 600, 'secondary', 700, 'secondary', 800)
+
+  &_filled-action-red
+    @include filled('action-red', 400, 'action-red', 500, 'action-red', 800)
+
+  &_filled-grey
+    @include filled('dark', 400, 'dark', 500, 'dark', 600)
+
+  &_filled 
+    &.disabled,
+    &[disabled]
+      background-color: map-get(map-get($color-palette, dark), 100)
+      color: map-get(map-get($color-palette, dark), 300)
+  
+  &_unbordered
+    border: none
+
+  &_sm
+    height: rem(38)
+    padding: rem(10) rem(16)
+
+  &_xs
+    height: rem(28)
+    padding: rem(4)
+    border-radius: rem(8)
+
+    .icon
+      max-width: rem(20)
+      min-width: rem(20)
+      height: rem(20)
+
+  &_reverse
+    flex-direction: row-reverse
+
+    .icon
+      margin-right: rem(8)
+      margin-left: 0
+
+  &_action
+    padding: 0
+    min-width: rem(48)
+    max-width: rem(48)
+    max-height: rem(48)    
+    width: 100%
+
+    &.btn_sm
+      min-width: rem(38)
+      max-width: rem(38)
+      max-height: rem(38)    
+
+    &.btn_xs
+      min-width: rem(28)
+      max-width: rem(28)
+      max-height: rem(28)    
+
+  
+  &_default
+    color: $black
+    @extend .text-sm-500
+    background-color: map-get(map-get($color-palette, dark), 50)
+    border: none
+
+    &:hover
+      background-color: map-get(map-get($color-palette, dark), 100)
+
+    &.active,
+    &:active
+      background-color: map-get(map-get($color-palette, dark), 200)
+
+
+.btn-nav
+  background-color: map-get(map-get($color-palette, dark), 100)
+  border-radius: map-get($border-radiuses, sm)
+  @include dif-xy-center
+  padding: rem(8) rem(12) rem(8) rem(8)
+  color: $black
+  box-sizing: border-box
+  height: rem(36)
+  cursor: pointer
+  transition: background-color .3s ease
+  @extend .text-sm-600
+  min-width: rem(90)
+
+  &:hover
+    background-color: map-get(map-get($color-palette, primary), 50)
+
+  &.active,
+  &:active
+    background-color: map-get(map-get($color-palette, primary), 100)
+
+  .icon
+    margin-right: rem(8)
+    fill: currentColor
+    
+
+  &_sm
+    height: rem(32)
+    @extend .caption-600
+    min-width: rem(80)
+
+  &_reverse
+    flex-direction: row-reverse
+    padding: rem(8) rem(8) rem(8) rem(12)
+    
+    .icon
+      margin-right: 0
+      margin-left: rem(8)
+      transform: rotate(180deg)
+
+.notification
+  border-radius: map-get($border-radiuses, xs)
+  background-color: map-get(map-get($color-palette, primary), 50)
+  color: $primary
+  @include dif-x-end
+  min-width: rem(32)
+  height: rem(32)
+  padding: rem(7) rem(4)
+  box-sizing: border-box
+  cursor: pointer
+  transition: background-color 0.3s ease
+  position: relative
+  
+  .icon
+    fill: currentColor
+    margin-right: rem(4)
+    
+  @mixin status($color-palette-name, $shade)
+    &::before
+      position: absolute
+      content: ''
+      width: rem(7)
+      height: rem(7)
+      border-radius: 100%
+      background-color: map-get(map-get($color-palette, $color-palette-name), $shade)
+      top: -1px
+      right: -1px
+      z-index: 1
+  $statuses: primary, secondary, warning, action-red
+
+  @each $status in $statuses
+    &_status-#{$status}
+      @include status($status, 600)
+
+  &__count
+    @extend .text-sm-600
+    width: 100%
+
+  &:hover
+    background-color: map-get(map-get($color-palette, primary), 100)
+    
+   
+  &.active,
+  &:active
+    background-color: map-get(map-get($color-palette, primary), 200)
+   
+
+  &_hidden-count
+    transform-origin: left
+    max-width: rem(32)
+    transition: min-width 0.3s ease, max-width 0.3s ease
+  
+    .icon
+      transition: left 0.3s ease, background-color 0.3s ease
+      position: absolute
+      left: rem(8)
+      z-index: 1
+      margin-right: 0
+      border-radius: 100%
+      
+      &:after
+        position: absolute
+        content: ''
+        height: 100%
+        width: calc( 100% + 9px )
+        left: rem(-4)
+        background-color: map-get(map-get($color-palette, primary), 50)
+        z-index: -1
+        border-radius: 100%
+        
+
+    .notification__count
+      will-change: opacity, transform, padding-left 
+      opacity: 0
+      transition: opacity, transform, padding-left 0.3s ease
+      
+      
+    &:hover
+      min-width: rem(42)
+      max-width: max-content
+      
+      .icon
+        left: rem(4)
+        background-color: map-get(map-get($color-palette, primary), 100)
+        
+        &:after
+          background-color: map-get(map-get($color-palette, primary), 100)
+      
+      .notification__count
+        opacity: 1
+        padding-left: rem(20)
+
+    &.active,
+    &:active    
+      .icon
+        background-color: map-get(map-get($color-palette, primary), 200)
+        
+        &:after
+          background-color: map-get(map-get($color-palette, primary), 200)

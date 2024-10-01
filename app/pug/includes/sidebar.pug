@@ -1,0 +1,24 @@
+.sidebar
+  .sidebar__section 
+    a(href="#").sidebar__logo  
+      svg
+        use(xlink:href='sprite.svg#logo')
+
+  .sidebar__section 
+    .sidebar__label.caption-600.text-dark-500
+      span Баланс 
+    .sidebar__balance.sidebarBtn-js
+      h4.sidebar__balance-count.text-black.balance-count-js 999 999 999
+      h5.sidebar__balance-icon.text-secondary-600 ₽
+
+  each section in menu
+    .sidebar__section 
+      .sidebar__label.caption-600.text-dark-500
+        span= section.label
+
+      each item in section.items
+        a(href=item.href).sidebar__button.border-radius-sm.text-600.sidebarBtn-js
+          .icon.icon_w24
+            svg
+              use(xlink:href=`sprite.svg#${item.icon}`)
+          span= item.label

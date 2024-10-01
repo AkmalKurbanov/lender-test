@@ -1,0 +1,186 @@
+.sidebar
+  padding: rem(36) rem(16)
+  background-color: $white
+  box-sizing: border-box
+  overflow: hidden
+  display: inline-block
+  transition: max-width 0.3s ease-out
+  height: 100dvh
+  will-change: max-width
+  border-right: rem(1) solid map-get(map-get($color-palette, dark), 200)
+
+  &__section
+    margin-bottom: rem(24)
+    position: relative
+
+    &:last-child
+      margin-bottom: 0
+
+    &:first-child
+      padding-top: 0
+      padding-left: 0
+
+  &__logo
+    max-width: rem(56)
+    min-width: rem(56)
+    min-height: rem(36)
+    max-height: rem(36)
+    width: 100%
+    @include dif-xy-center
+    position: relative
+
+    svg
+      width: 100%
+      height: 100%
+      position: absolute
+
+  &__label
+    width: rem(56)
+    display: inline-block
+    position: relative
+    min-height: rem(15)
+    margin-bottom: rem(4)
+
+    span
+      
+      display: block
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      transition: left .3s ease, transform .3s ease
+
+  &__button
+    padding: rem(12)
+    transition: background-color 0.3s ease-out, color 0.2s ease-out, max-width .5s, min-width .5s ease-out, margin-left 0.2s ease
+    text-decoration: none
+    @include df-y-center
+    min-width: rem(48)
+    max-width: rem(48)
+    width: 100%
+    max-height: rem(48)
+    position: relative
+    overflow: hidden
+    box-sizing: border-box
+    will-change: background-color, color, max-width, min-width
+    margin-left: rem(4)
+
+    &::before
+      position: absolute
+      content: ''
+      height: 100%
+      width: rem(12)
+      background-color: $white
+      top: 0
+      left: 0
+      z-index: 1
+      transition: background-color .3s ease-out
+      will-change: background-color
+
+    .icon
+      fill: $primary
+      transition: fill 0.3s ease-out, background-color 0.3s ease-out
+      background-color: $white
+      z-index: 1
+      will-change: fill, background-color
+
+    span
+      color: $black
+      opacity: 0
+      transform: translateX(calc(  -100% - 12px  ))
+      position: absolute
+      pointer-events: none
+      margin-left: rem(12)
+      white-space: nowrap
+      transition: color, opacity, position, .3s, transform .5s
+      will-change: color, opacity, position, transform
+
+    &:hover
+      max-width: rem(200)
+      min-width: rem(200)
+
+      span
+        opacity: 1
+        transform: none
+        position: relative
+        color: $white
+
+    &:hover,
+    &.active,
+    &:active
+      background-color: $primary
+      color: $white
+
+      &::before
+        background-color: $primary
+
+      .icon
+        fill: $white
+        background-color: $primary
+      
+      span
+        color: $white
+  
+  &__balance 
+    @include df-y-center
+
+    &:hover
+      .sidebar__balance-count
+        opacity: 1
+        transform: none
+
+      .sidebar__balance-icon 
+        font-size: rem(20)
+        min-width: auto
+        max-width: none
+        
+  &__balance-count
+    white-space: nowrap
+    pointer-events: none
+    transform: translateX(-10px)
+    opacity: 0
+    overflow: hidden
+    transition: width 0.5s ease, opacity 0.5s ease, transform 0.5s ease
+    font-size: rem(20)
+    will-change: width, opacity, transform
+    
+  &__balance-icon
+    min-width: rem(56)
+    max-width: rem(56)
+    height: rem(30)
+    @include dif-xy-center
+    transition: min-width 0.3s ease-out, max-width 0.3s ease-out, height 0.3s ease-out 
+    font-size: rem(24)
+    font-weight: 600
+
+  &.effect, 
+  &.active
+    .sidebar__balance-count,
+    .sidebar__balance-icon
+      opacity: 1
+      transform: none
+
+    .sidebar__balance-icon
+      font-size: rem(20)
+      min-width: auto
+      max-width: none
+      margin-left: rem(4)
+
+  &.effect
+    .sidebar__count,
+    .sidebar__button
+      max-width: rem(200)
+      min-width: rem(200)
+
+      span
+        opacity: 1
+        transform: none
+        position: relative
+
+  &.active
+    .sidebar__label span
+      left: 0
+      transform: none
+
+    .sidebar__button
+      margin-left: 0
+

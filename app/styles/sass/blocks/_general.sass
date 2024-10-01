@@ -1,0 +1,50 @@
+*
+  margin: 0
+
+html,
+body
+  height: 100%
+  position: relative
+
+.wrapper
+  display: flex
+  flex-direction: row
+  min-height: 100%
+
+  .sidebar
+    position: sticky
+    top: 0
+
+  .content-wrap
+    display: flex
+    flex-direction: column
+    min-height: 100%
+    flex: 1
+    flex-grow: 1
+    min-width: 0
+
+    .content
+      flex: 1 0 auto
+      flex-grow: 1
+
+.container
+  width: 100%
+  padding-right: rem(16px)
+  padding-left: rem(16px)
+  margin-right: auto
+  margin-left: auto
+  max-width: rem(979)
+  position: relative
+  box-sizing: border-box
+
+  @include lg
+    max-width: rem(960px)
+
+  @include md
+    max-width: rem(720px)
+
+  @include sm
+    max-width: rem(540px)
+
+  @include xs
+    max-width: 100%

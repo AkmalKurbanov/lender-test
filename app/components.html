@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#005891">
+    <meta name="msapplication-navbutton-color" content="#005891">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#005891">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar__section"> <a class="sidebar__logo" href="#"> 
+            <svg>
+              <use xlink:href="sprite.svg#logo"></use>
+            </svg></a></div>
+        <div class="sidebar__section"> 
+          <div class="sidebar__label caption-600 text-dark-500"><span>Баланс </span></div>
+          <div class="sidebar__balance sidebarBtn-js">
+            <h4 class="sidebar__balance-count text-black balance-count-js">999 999 999</h4>
+            <h5 class="sidebar__balance-icon text-secondary-600">₽</h5>
+          </div>
+        </div>
+        <div class="sidebar__section"> 
+          <div class="sidebar__label caption-600 text-dark-500"><span>Меню</span></div><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#offers"></use>
+              </svg>
+            </div><span>Оферты</span></a><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#secondarymarket"></use>
+              </svg>
+            </div><span>Вторичный рынок</span></a><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#portfolio"></use>
+              </svg>
+            </div><span>Портфель</span></a><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#payments"></use>
+              </svg>
+            </div><span>Платежи</span></a>
+        </div>
+        <div class="sidebar__section"> 
+          <div class="sidebar__label caption-600 text-dark-500"><span>Аккаунт</span></div><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#support"></use>
+              </svg>
+            </div><span>Поддержка</span></a><a class="sidebar__button border-radius-sm text-600 sidebarBtn-js" href="#">
+            <div class="icon icon_w24">
+              <svg>
+                <use xlink:href="sprite.svg#profile"></use>
+              </svg>
+            </div><span>Профиль</span></a>
+        </div>
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <header class="header"> 
+            <div class="container">header</div>
+          </header>
+          <div class="container">
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary " href="#">Инвестировать</a><a class="btn btn_liner-secondary " href="#">Инвестировать</a><a class="btn btn_liner-action-red " href="#">Инвестировать</a><a class="btn btn_liner-grey " href="#">Инвестировать</a><a class="btn btn_liner-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_liner-primary " href="#">Инвестировать</a><a class="btn btn_sm btn_liner-secondary " href="#">Инвестировать</a><a class="btn btn_sm btn_liner-action-red " href="#">Инвестировать</a><a class="btn btn_sm btn_liner-grey " href="#">Инвестировать</a><a class="btn btn_sm btn_liner-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_liner-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary  btn_xs" href="#">Инвестировать</a><a class="btn btn_liner-secondary  btn_xs" href="#">Инвестировать</a><a class="btn btn_liner-action-red  btn_xs" href="#">Инвестировать</a><a class="btn btn_liner-grey  btn_xs" href="#">Инвестировать</a><a class="btn btn_liner-primary  btn_xs" href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-secondary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-action-red  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-grey  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-primary  btn_xs" href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary " href="#">Инвестировать</a><a class="btn btn_filled btn_filled-secondary " href="#">Инвестировать</a><a class="btn btn_filled btn_filled-action-red " href="#">Инвестировать</a><a class="btn btn_filled btn_filled-grey " href="#">Инвестировать</a><a class="btn btn_filled btn_filled-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_filled btn_filled-primary " href="#">Инвестировать</a><a class="btn btn_sm btn_filled btn_filled-secondary " href="#">Инвестировать</a><a class="btn btn_sm btn_filled btn_filled-action-red " href="#">Инвестировать</a><a class="btn btn_sm btn_filled btn_filled-grey " href="#">Инвестировать</a><a class="btn btn_sm btn_filled btn_filled-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_filled btn_filled-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary  btn_xs" href="#">Инвестировать</a><a class="btn btn_filled btn_filled-secondary  btn_xs" href="#">Инвестировать</a><a class="btn btn_filled btn_filled-action-red  btn_xs" href="#">Инвестировать</a><a class="btn btn_filled btn_filled-grey  btn_xs" href="#">Инвестировать</a><a class="btn btn_filled btn_filled-primary  btn_xs" href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-secondary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-action-red  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-grey  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-primary  btn_xs" href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary " href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-secondary " href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-action-red " href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-grey " href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_unbordered btn_liner-primary " href="#">Инвестировать</a><a class="btn btn_sm btn_unbordered btn_liner-secondary " href="#">Инвестировать</a><a class="btn btn_sm btn_unbordered btn_liner-action-red " href="#">Инвестировать</a><a class="btn btn_sm btn_unbordered btn_liner-grey " href="#">Инвестировать</a><a class="btn btn_sm btn_unbordered btn_liner-primary " href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_unbordered btn_liner-primary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-secondary " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-action-red " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-grey " href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-primary " href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary  btn_xs" href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-secondary  btn_xs" href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-action-red  btn_xs" href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-grey  btn_xs" href="#">Инвестировать</a><a class="btn btn_unbordered btn_liner-primary  btn_xs" href="#" disabled>Инвестировать</a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-secondary  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-action-red  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-grey  btn_xs" href="#">Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-primary  btn_xs" href="#" disabled>Инвестировать
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#arrowright-o"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_liner-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_liner-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_liner-primary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-secondary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-action-red btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-grey btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_liner-primary btn_action btn_xs" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_filled btn_filled-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_filled btn_filled-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_filled btn_filled-primary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-secondary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-action-red btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-grey btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_filled btn_filled-primary btn_action btn_xs" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_sm btn_unbordered btn_liner-primary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-secondary btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-action-red btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-grey btn_action" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_sm btn_unbordered btn_liner-primary btn_action" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br>
+            <div style="display: flex; justify-content: space-around"><a class="btn btn_unbordered btn_liner-primary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-secondary btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-action-red btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-grey btn_action btn_xs" href="#">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a><a class="btn btn_unbordered btn_liner-primary btn_action btn_xs" href="#" disabled>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#plus"></use>
+                      </svg>
+                    </div></a>
+            </div><br><br><br><br><br>
+            <div style="display: flex; justify-content: space-around">
+              <div class="btn-nav"> 
+                <div class="icon icon_w20">
+                  <svg>
+                    <use xlink:href="sprite.svg#angleleft"></use>
+                  </svg>
+                </div>Назад    
+              </div>
+              <div class="btn-nav btn-nav_reverse"> 
+                <div class="icon icon_w20">
+                  <svg>
+                    <use xlink:href="sprite.svg#angleleft"></use>
+                  </svg>
+                </div>Вперед    
+              </div>
+              <div class="btn-nav btn-nav_sm"> 
+                <div class="icon icon_w16">
+                  <svg>
+                    <use xlink:href="sprite.svg#angleleft"></use>
+                  </svg>
+                </div>Назад    
+              </div>
+              <div class="btn-nav btn-nav_reverse btn-nav_sm"> 
+                <div class="icon icon_w16">
+                  <svg>
+                    <use xlink:href="sprite.svg#angleleft"></use>
+                  </svg>
+                </div>Вперед    
+              </div>
+            </div><br><br>
+            <div><a class="btn btn_default btn_reverse" href="#">Перейти к каналу
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#telegram"></use>
+                      </svg>
+                    </div></a><br><br><a class="btn btn_default btn_reverse text-action-red-400" href="#">Выйти
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#logout"></use>
+                      </svg>
+                    </div></a>
+            </div><br><br>
+            <div>
+              <div style="display: inline; margin-right: 10px">
+                <div class="notification notification_hidden-count notification_status-primary">
+                  <div class="icon icon_w16">
+                    <svg>
+                      <use xlink:href="sprite.svg#chat"></use>
+                    </svg>
+                  </div>
+                  <div class="notification__count">17</div>
+                </div>
+              </div>
+              <div style="display: inline; margin-right: 10px">
+                <div class="notification notification_hidden-count notification_status-secondary">
+                  <div class="icon icon_w16">
+                    <svg>
+                      <use xlink:href="sprite.svg#chat"></use>
+                    </svg>
+                  </div>
+                  <div class="notification__count">32</div>
+                </div>
+              </div>
+              <div style="display: inline; margin-right: 10px">
+                <div class="notification notification_hidden-count notification_status-warning">
+                  <div class="icon icon_w16">
+                    <svg>
+                      <use xlink:href="sprite.svg#chat"></use>
+                    </svg>
+                  </div>
+                  <div class="notification__count">20</div>
+                </div>
+              </div>
+              <div style="display: inline; margin-right: 10px">
+                <div class="notification notification_hidden-count notification_status-action-red">
+                  <div class="icon icon_w16">
+                    <svg>
+                      <use xlink:href="sprite.svg#chat"></use>
+                    </svg>
+                  </div>
+                  <div class="notification__count">999</div>
+                </div>
+              </div>
+              <div style="display: inline; margin-right: 10px">
+                <div class="notification notification_hidden-count notification_status-action-red">
+                  <div class="icon icon_w16">
+                    <svg>
+                      <use xlink:href="sprite.svg#chat"></use>
+                    </svg>
+                  </div>
+                  <div class="notification__count">1000</div>
+                </div>
+              </div><br><br>
+              <div>   
+                <div style="display: inline; margin-right: 10px">
+                  <div class="notification">
+                    <div class="icon icon_w16">
+                      <svg>
+                        <use xlink:href="sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="notification__count">17</div>
+                  </div>
+                </div>
+                <div style="display: inline; margin-right: 10px">
+                  <div class="notification">
+                    <div class="icon icon_w16">
+                      <svg>
+                        <use xlink:href="sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="notification__count">32</div>
+                  </div>
+                </div>
+                <div style="display: inline; margin-right: 10px">
+                  <div class="notification">
+                    <div class="icon icon_w16">
+                      <svg>
+                        <use xlink:href="sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="notification__count">20</div>
+                  </div>
+                </div>
+                <div style="display: inline; margin-right: 10px">
+                  <div class="notification">
+                    <div class="icon icon_w16">
+                      <svg>
+                        <use xlink:href="sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="notification__count">999</div>
+                  </div>
+                </div>
+                <div style="display: inline; margin-right: 10px">
+                  <div class="notification">
+                    <div class="icon icon_w16">
+                      <svg>
+                        <use xlink:href="sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="notification__count">1000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1>Заголовок первого уровня</h1>
+            <h2>Заголовок второго уровня</h2>
+            <p class="text-400">Обычный текст с весом 400.</p>
+            <p class="text-600">Полужирный текст с весом 600.</p>
+            <p class="text-sm-400">Мелкий текст с весом 400.</p>
+            <p class="text-sm-600">Мелкий полужирный текст с весом 600.</p><span class="caption-400">Обычная подпись с весом 400. <br></span><span class="caption-600">Полужирная подпись с весом 600. <br></span><span class="caption-sm-400">Мелкая подпись с весом 400. <br></span><span class="caption-sm-700">Мелкая жирная подпись с весом 700. <br></span><br><br>
+            <div style="display: flex; flex-wrap:wrap;"> 
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#arrowright-o"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#angleleft"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#chat"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#logout"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#telegram"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#offers"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#secondarymarket"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#portfolio"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#payments"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#analytics"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#support"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#profile"></use>
+                </svg>
+              </div>
+              <div class="icon" style="width:20px;height:20px;margin-right:5px;">
+                <svg fill="#000" style="width:100%;height:100%">
+                  <use xlink:href="sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer"> 
+          <div class="container">footer</div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/app.min.js"> </script>
+  </body>
+</html>
